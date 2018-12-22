@@ -1,0 +1,9 @@
+.cardTemplate {
+    box-sizing: border-box;
+    box-shadow: 1px 1px 1px black;
+    border: 2px solid black;
+    width:250px;
+    height:300px;
+    margin: 10px auto;
+
+}
