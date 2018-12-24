@@ -1,22 +1,13 @@
 import Roll from '../Roll'
 
-const Modify = {
-
-    generateModifier: (rank) => {
-
-    },
-    rollForModifires: (level) => {
-        let modifires = [];
-        switch (level) {
-            case "Enchanted":
-                modifires.push("Bleeding")
-                break;
-            default:
-                modifires.push("Nimp")
-                break;
+const Modifiers = {
+    firstDegree: () => {
+        const roll = Roll(1,3)
+        return {
+            name: "+" +roll,
+            dmg: 5*roll
         }
-        return modifires;
     }
 }
 
-export default Modify;
+export default Modifiers;

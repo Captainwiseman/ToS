@@ -1,6 +1,6 @@
 import Item from './item'
 import Armory from './armory'
-import Modify from './modifiers'
+import Modify from './modify'
 let changeCase = require('change-case')
 
 class Weapon extends Item {
@@ -24,13 +24,18 @@ class Weapon extends Item {
         this.damage = this.calcDamage();
     }
     generateName = () => {
-        return changeCase.titleCase(`${this.model} ${this.class} of ${this.generateModifierName(this.modifiers[0])}`)
+        return changeCase.titleCase(`${this.model} ${this.class}`) + this.generateModifierName(this.modifiers)
     }
     calcDamage = () => {
 
     }
-    generateModifierName = (modifier) => {
-        return modifier;
+    generateModifierName = (modifiers) => {
+        if (modifiers.length <= 0) {
+            return ""
+        }
+        if (modifiers.length = 1) {
+        return ` ${modifiers[0].name}`
+        }
     }
 }
 export default Weapon;

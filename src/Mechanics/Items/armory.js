@@ -1,12 +1,12 @@
 import Roll from '../Roll'
 
 const Armory = {
-    levels: ["Regular","Enchanted", "Rare","Exotic", "Set", "Crafted", "Artisan"],
+    levels: ["Regular","Enchanted", "Rare","Exotic","Artisan", "Set", "Crafted"],
     elements: ["Thaumaturgic", "Evolved", "Spliced", "Synthesized", "Dimensional"],
     types: {
         weapons: {
             class: ["Sword","Bow","Pistol","Mace","Rifle"],
-            model: ["Shenknoon", "Ruby","Lame","Snich"]
+            model: ["Shenknoon", "Ruby","Lame","Snich", "Asperagus","Milood"]
         },
         armors: {
             class: ["robes","chestplate","pants","underpants","stupid hat"],
